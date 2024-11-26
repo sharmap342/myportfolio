@@ -835,7 +835,41 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
+/* Background Tile Styling for Skills Section */
+#skills {
+  background-color: #e6f7ff; /* Light blue background */
+  padding: 50px; /* Adds spacing inside the tile */
+  border-radius: 10px; /* Rounds the corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  margin: 20px auto; /* Centers the tile and adds spacing above/below */
+  max-width: 1200px; /* Restricts the tile width for better readability */
+}
+
+#skills h2 {
+  text-align: center; /* Centers the main title */
+  color: #1f4e79; /* Matches the heading color */
+  margin-bottom: 30px;
+}
+
+#skills .skills-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensures the layout adapts for smaller screens */
+  justify-content: space-between;
+}
+
+#skills .col-lg-6 {
+  flex: 1 1 48%; /* Allows two columns to fit side-by-side */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #skills .col-lg-6 {
+    flex: 1 1 100%; /* Stacks columns on smaller screens */
+  }
+}
+
+
+/* .skills .progress {
   height: 60px;
   display: block;
   background: none;
@@ -867,7 +901,7 @@ section,
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
-}
+} */
 
 /*--------------------------------------------------------------
 # Interests Section

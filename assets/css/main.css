@@ -837,7 +837,7 @@ section,
 --------------------------------------------------------------*/
 /* Background Tile Styling for Skills Section */
 #skills {
-  background-color: #e6f7ff; /* Light blue background */
+  background-color: #032d41; /* Light blue background */
   padding: 50px; /* Adds spacing inside the tile */
   border-radius: 10px; /* Rounds the corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */

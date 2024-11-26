@@ -836,37 +836,95 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 /* Background Tile Styling for Skills Section */
+/* Section Title */
+.skills-title {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.skills-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; /* Adjust to desired color */
+}
+
+/* Background Tile */
 #skills {
-  background-color: #032d41; /* Light blue background */
-  padding: 50px; /* Adds spacing inside the tile */
-  border-radius: 10px; /* Rounds the corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
-  margin: 20px auto; /* Centers the tile and adds spacing above/below */
-  max-width: 1200px; /* Restricts the tile width for better readability */
+  background-color: #011823; /* Light blue background */
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#skills h2 {
-  text-align: center; /* Centers the main title */
-  color: #1f4e79; /* Matches the heading color */
-  margin-bottom: 30px;
+/* Skills Container */
+.skills-container {
+  background-color: #00394d; /* Darker blue tile */
+  padding: 30px;
+  border-radius: 10px;
 }
 
-#skills .skills-content {
+.skills-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White headings */
+  margin-bottom: 15px;
+}
+
+.skills-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-container li {
+  color: #d9f0ff; /* Light text color */
+  margin-bottom: 10px;
+}
+
+.skills-container .row {
   display: flex;
-  flex-wrap: wrap; /* Ensures the layout adapts for smaller screens */
   justify-content: space-between;
-}
-
-#skills .col-lg-6 {
-  flex: 1 1 48%; /* Allows two columns to fit side-by-side */
+  gap: 20px;
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  #skills .col-lg-6 {
-    flex: 1 1 100%; /* Stacks columns on smaller screens */
-  }
+.skills-container .col {
+  flex: 1;
 }
+
+/* Add Icon Styling */
+.icon-programming::before {
+  content: "💻";
+  margin-right: 10px;
+}
+
+.icon-cloud::before {
+  content: "☁️";
+  margin-right: 10px;
+}
+
+.icon-visualization::before {
+  content: "📊";
+  margin-right: 10px;
+}
+
+.icon-tools::before {
+  content: "🛠️";
+  margin-right: 10px;
+}
+
+.icon-machinelearning::before {
+  content: "🧠";
+  margin-right: 10px;
+}
+
+.icon-devops::before {
+  content: "⚙️";
+  margin-right: 10px;
+}
+
 
 
 /* .skills .progress {

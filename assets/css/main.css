@@ -846,7 +846,7 @@ section,
   color: #ffffff;
   margin-left: 0; /* Aligns with the container */
   position: relative;
-  margin-bottom: 50px; /* Added space below the title */
+  margin-bottom: 30px; /* Added space below the title */
 }
 
 .skills-title::after {

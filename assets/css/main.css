@@ -835,29 +835,22 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-/* Background Tile Styling for Skills Section */
-/* Section Title */
-/* Section Title */
-/* Skills Title */
-/* Skills Title */
+/* skill title */
 .skills-title {
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
-  margin-left: 0; /* Aligns with the container */
-  position: relative;
-  margin-bottom: 30px; /* Added space below the title */
+  margin-bottom: 30px; /* Space below the title */
 }
 
 .skills-title::after {
   content: "";
   display: block;
   width: 80px;
-  height: 1px;
+  height: 4px;
   background-color: #00ff00; /* Green underline */
-  position: absolute;
-  bottom: -5px;
-  left: 0;
+  position: relative;
+  margin-top: 10px;
 }
 
 /* Skills Container */
@@ -866,7 +859,6 @@ section,
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px; /* Space below the skills container */
 }
 
 .skills-container h3 {
@@ -894,16 +886,23 @@ section,
   color: var(--accent-color);
 }
 
-.skills-container ul strong {
-  font-weight: bold;
-  color: #ffffff;
+/* Two-Column Layout */
+.skills-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Skills Section Row */
-.skills .row {
-  gap: 20px; /* Space between columns */
+.skills-container .col-lg-6 {
+  flex: 0 0 48%; /* Ensures two columns split evenly */
 }
 
+/* Mobile View (Fallback for smaller screens) */
+@media (max-width: 768px) {
+  .skills-container .col-lg-6 {
+    flex: 0 0 100%; /* Stack columns on small screens */
+  }
+}
 
 /* .skills .progress {
   height: 60px;

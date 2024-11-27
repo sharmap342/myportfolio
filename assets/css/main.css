@@ -838,87 +838,55 @@ section,
 /* Background Tile Styling for Skills Section */
 /* Section Title */
 /* Section Title */
+/* Skills Title */
 .skills-title {
-  text-align: left;
-  margin-left: 100px;
-  margin-bottom: 20px;
-}
-
-.skills-title h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff; /* Adjust to desired color */
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 0; /* Aligns with the container */
   position: relative;
 }
 
-.skills-title h2::after {
+.skills-title::after {
   content: "";
   display: block;
-  width: 80px; /* Length of the underline */
-  height: 4px; /* Thickness of the line */
+  width: 80px;
+  height: 4px;
   background-color: #00ff00; /* Green underline */
   position: absolute;
-  bottom: -10px; /* Spacing between text and line */
+  bottom: -5px;
   left: 0;
 }
 
-/* Skills Container */
-.skills-container {
-  background-color: #00394d; /* Dark blue tile for skills */
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-left: 100px; /* Align with Certifications */
-  margin-right: 100px; /* Optional, for symmetrical layout */
-}
-
-.skills-container h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff; /* White headings */
-  margin-bottom: 15px;
-}
-
-.skills-container ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.skills-container li {
-  color: #d9f0ff; /* Light text color */
-  margin-bottom: 10px;
-}
-
-.skills-container .row {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+/* Skills Content */
+.skills .row h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
-.skills-container .col {
-  flex: 1;
+.skills .row ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Add Icon Styling */
-.icon-programming::before {
-  content: "💻";
-  margin-right: 10px;
+.skills .row ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #d9f0ff;
 }
 
-.icon-cloud::before {
-  content: "☁️";
+.skills .row ul li i {
+  font-size: 16px;
   margin-right: 10px;
+  color: var(--accent-color);
 }
 
-.icon-visualization::before {
-  content: "📊";
-  margin-right: 10px;
-}
-
-.icon-tools::before {
-  content: "🛠️";
-  margin-right: 10px;
+.skills .row ul strong {
+  font-weight: bold;
+  color: #ffffff;
 }
 
 

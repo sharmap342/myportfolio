@@ -837,33 +837,36 @@ section,
 --------------------------------------------------------------*/
 /* Background Tile Styling for Skills Section */
 /* Section Title */
+/* Section Title */
 .skills-title {
   text-align: left;
   margin-bottom: 20px;
-  padding-left: 20px;
 }
 
 .skills-title h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #d8d7dc; /* Adjust to desired color */
+  color: #ffffff; /* Adjust to desired color */
+  position: relative;
 }
 
-/* Background Tile */
-#skills {
-  background-color: #011823; /* Light blue background */
-  padding: 30px;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 1200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.skills-title h2::after {
+  content: "";
+  display: block;
+  width: 80px; /* Length of the underline */
+  height: 4px; /* Thickness of the line */
+  background-color: #00ff00; /* Green underline */
+  position: absolute;
+  bottom: -10px; /* Spacing between text and line */
+  left: 0;
 }
 
 /* Skills Container */
 .skills-container {
-  background-color: #00394d; /* Darker blue tile */
+  background-color: #00394d; /* Dark blue tile for skills */
   padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skills-container h3 {
@@ -912,16 +915,6 @@ section,
 
 .icon-tools::before {
   content: "🛠️";
-  margin-right: 10px;
-}
-
-.icon-machinelearning::before {
-  content: "🧠";
-  margin-right: 10px;
-}
-
-.icon-devops::before {
-  content: "⚙️";
   margin-right: 10px;
 }
 

@@ -839,12 +839,14 @@ section,
 /* Section Title */
 /* Section Title */
 /* Skills Title */
+/* Skills Title */
 .skills-title {
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
   margin-left: 0; /* Aligns with the container */
   position: relative;
+  margin-bottom: 30px; /* Added space below the title */
 }
 
 .skills-title::after {
@@ -858,37 +860,49 @@ section,
   left: 0;
 }
 
-/* Skills Content */
-.skills .row h3 {
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 20px;
+/* Skills Container */
+.skills-container {
+  background-color: #00394d; /* Dark blue background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px; /* Space below the skills container */
 }
 
-.skills .row ul {
+.skills-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.skills-container ul {
   list-style: none;
   padding: 0;
 }
 
-.skills .row ul li {
+.skills-container li {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
-  color: #d9f0ff;
+  margin-bottom: 10px;
+  color: #d9f0ff; /* Light blue text color */
 }
 
-.skills .row ul li i {
+.skills-container li i {
   font-size: 16px;
   margin-right: 10px;
   color: var(--accent-color);
 }
 
-.skills .row ul strong {
+.skills-container ul strong {
   font-weight: bold;
   color: #ffffff;
 }
 
+/* Skills Section Row */
+.skills .row {
+  gap: 20px; /* Space between columns */
+}
 
 
 /* .skills .progress {

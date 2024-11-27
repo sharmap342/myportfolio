@@ -847,7 +847,7 @@ section,
   content: "";
   display: block;
   width: 80px;
-  height: 4px;
+  height: 2px;
   background-color: #00ff00; /* Green underline */
   position: relative;
   margin-top: 10px;
@@ -941,6 +941,27 @@ section,
 /*--------------------------------------------------------------
 # Interests Section
 --------------------------------------------------------------*/
+.description-title {
+  display: inline-block; /* Allows the underline to adjust to the text width */
+  font-size: 24px; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  position: relative;
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+.description-title::after {
+  content: "";
+  display: block;
+  width: 100%; /* Full width of the text */
+  height: 2px; /* Thickness of the underline */
+  background-color: #00ff00; /* Green underline */
+  margin-top: 5px; /* Space between the text and underline */
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjusts the position of the underline */
+}
+
 .interests .features-item {
   background-color: var(--surface-color);
   display: flex;

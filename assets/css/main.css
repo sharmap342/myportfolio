@@ -1354,8 +1354,13 @@ section,
   overflow: hidden;
 }
 
+
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  width: 100%; /* Makes the image responsive */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image scales without distortion */
+  border-radius: 5px; /* Optional: For rounded corners */
 }
 
 .portfolio .portfolio-content .portfolio-info {

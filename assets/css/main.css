@@ -765,13 +765,14 @@ section,
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 
 .about-title h2::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 120px;
   height: 2px;
   background-color: #00ff00; /* Green underline */
   position: relative;

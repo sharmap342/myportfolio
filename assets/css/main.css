@@ -760,7 +760,7 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about-title {
+.about-title h2{
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
@@ -768,7 +768,7 @@ section,
 }
 
 
-.about-title ::after {
+.about-title h2::after {
   content: "";
   display: block;
   width: 80px;

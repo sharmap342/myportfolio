@@ -760,6 +760,30 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about-title {
+  text-align: left;
+  margin-left: 50px; /* Adjust margin to align with container content */
+  margin-bottom: 20px;
+}
+
+.about-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff; /* Adjust to desired text color */
+  position: relative;
+}
+
+.about-title h2::after {
+  content: "";
+  display: block;
+  width: 80px; /* Length of the underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #00ff00; /* Green underline */
+  position: absolute;
+  bottom: -10px; /* Spacing between text and underline */
+  left: 0;
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;

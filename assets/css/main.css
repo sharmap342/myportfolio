@@ -768,7 +768,7 @@ section,
 }
 
 
-.about-title h2::after {
+.about-title ::after {
   content: "";
   display: block;
   width: 80px;

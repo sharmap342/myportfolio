@@ -201,4 +201,25 @@
 
   });
 
+// modal.js
+
+// Open the modal and dynamically load the iframe content
+function openModal(url) {
+  const modal = document.getElementById('detailsModal');
+  const iframe = document.getElementById('modalIframe');
+  iframe.src = url; // Set the iframe source to the provided URL
+  modal.style.display = 'block'; // Show the modal
+}
+
+// Close the modal
+function closeModal(event) {
+  const modal = document.getElementById('detailsModal');
+  if (!event || event.target === modal) { // Close if clicked outside the modal or on the close button
+    const iframe = document.getElementById('modalIframe');
+    iframe.src = ''; // Clear the iframe source
+    modal.style.display = 'none'; // Hide the modal
+  }
+}
+  
+
 })();

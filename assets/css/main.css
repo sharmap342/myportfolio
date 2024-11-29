@@ -1492,28 +1492,25 @@ section,
   text-align: center; /* Center the image/slider */
 }
 
-/* Ensure text columns are properly aligned */
-.portfolio-details .row {
-  display: flex;
-  flex-wrap: wrap;
+/* Add margin to prevent text from overlapping with header */
+#portfolio-details {
+  margin-top: 100px; /* Adjust the value to match your header height */
 }
 
-.portfolio-details .col-lg-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.portfolio-details .mt-4 {
-  margin-top: 40px; /* Additional spacing between sections */
-}
-
+/* Ensure image takes up full width */
 .portfolio-details .full-width-image {
   width: 100%; /* Makes the image span the full width of the container */
-  height: 300px; /* Adjust the height to the desired value */
-  object-fit: cover; /* Ensures the image maintains proper aspect ratio while cropping */
-  display: block; /* Ensures no unexpected spacing issues */
-  margin: 0 auto; /* Centers the image if necessary */
+  height: auto; /* Keeps the aspect ratio intact */
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally if necessary */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+/* Container-specific fixes */
+.portfolio-details .container {
+  max-width: 100%; /* Allows the container to span the full width of the screen */
+  padding-left: 15px; /* Keeps a little padding for structure */
+  padding-right: 15px;
 }
 
 /*--------------------------------------------------------------

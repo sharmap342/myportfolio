@@ -1487,34 +1487,28 @@ section,
 }
 
 /* Ensure spacing around the image */
-.portfolio .portfolio-details-slider {
+.portfolio-details .portfolio-details-slider {
   margin-bottom: 30px; /* Add spacing below the image section */
   text-align: center; /* Center the image/slider */
 }
 
 /* Ensure text columns are properly aligned */
-.portfolio .row {
+.portfolio-details .row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio .col-lg-6 {
+.portfolio-details .col-lg-6 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.portfolio .mt-4 {
+.portfolio-details .mt-4 {
   margin-top: 40px; /* Additional spacing between sections */
 }
 
-
-.portfolio .portfolio-details-slider img {
-  width: 100%; /* Ensures the images fit their container */
-  height: auto;
-}
-
-.portfolio .full-width-image {
+.portfolio-details .full-width-image {
   width: 100%; /* Makes the image span the full width of the container */
   height: 300px; /* Adjust the height to the desired value */
   object-fit: cover; /* Ensures the image maintains proper aspect ratio while cropping */

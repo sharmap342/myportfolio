@@ -1425,6 +1425,7 @@ section,
 }
 
 .portfolio .row {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap; /* Ensures items stack on smaller screens */
   align-items: center; /* Align items vertically in the center */

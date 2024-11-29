@@ -1424,6 +1424,27 @@ section,
   transform: scale(1.1);
 }
 
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items stack on smaller screens */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.portfolio .portfolio-info,
+.portfolio .portfolio-description {
+  margin-bottom: 20px;
+}
+
+.portfolio .col-lg-6 {
+  flex: 0 0 50%; /* Ensures each column takes 50% of the row's width */
+  max-width: 50%;
+}
+
+.portfolio .portfolio-details-slider img {
+  width: 100%; /* Ensures the images fit their container */
+  height: auto;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/

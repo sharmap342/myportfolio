@@ -122,7 +122,7 @@
                   <h4>Sentiment Analysis</h4>
                   <p>Real-Time Sentiment Analysis on Twitter Data</p>
                   <a href="assets/img/portfolio/senti.gif" title="Sentiment Analysis" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="javascript:void(0);" title="More Details" class="details-link" onclick="openModal('portfolio-details.html')">
+                  <a href="#" title="More Details" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('portfolio-details.html')">
                     <i class="bi bi-link-45deg"></i>
                   </a>
                   <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
@@ -190,13 +190,6 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div id="detailsModal" class="modal" onclick="closeModal(event)">
-              <div class="modal-content">
-                <iframe id="modalIframe" src="" frameborder="0" class="iframe-content"></iframe>
-                <span class="close" onclick="closeModal()">×</span>
-              </div>
-            </div>
-
           </div><!-- End Portfolio Container -->
 
         </div>
@@ -219,6 +212,21 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Content will be loaded dynamically -->
+          <iframe id="projectIframe" src="" style="width:100%; height:500px; border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

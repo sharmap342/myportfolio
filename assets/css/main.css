@@ -1514,6 +1514,14 @@ section,
   height: auto;
 }
 
+.portfolio .full-width-image {
+  width: 100%; /* Makes the image span the full width of the container */
+  height: 300px; /* Adjust the height to the desired value */
+  object-fit: cover; /* Ensures the image maintains proper aspect ratio while cropping */
+  display: block; /* Ensures no unexpected spacing issues */
+  margin: 0 auto; /* Centers the image if necessary */
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/

@@ -1311,8 +1311,8 @@ section,
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 30px auto;
+  padding: 30px;
+  margin: 0 auto 40px auto;
   list-style: none;
   text-align: center;
 }
@@ -1321,7 +1321,7 @@ section,
   cursor: pointer;
   display: inline-block;
   padding: 0;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
   margin: 0 10px;
   line-height: 1;

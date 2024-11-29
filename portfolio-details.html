@@ -100,30 +100,11 @@
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row d-flex align-items-center">
     
-          <!-- Left Column: Text -->
-          <div class="col-lg-6">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Tools</strong>: Web design</li>
-                <li><strong>Blog</strong>: <a href="#">Medium</a></li>
-                <li><strong>Source Code</strong>: <a href="#">Github</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Real-Time Sentiment Analysis on Twitter Data</h2>
-              <p>
-                Developed a real-time sentiment analysis application that processes Twitter data using machine learning models like Logistic Regression, XGBoost, and neural networks. Cleaned and transformed 1.6 million tweets with regex and NLTK to improve model accuracy, leveraging scikit-learn and Keras for text classification.
-              </p>
-            </div>
-          </div>
-    
-          <!-- Right Column: Images -->
-          <div class="col-lg-6">
+        <!-- Image Section (At the Top) -->
+        <div class="row">
+          <div class="col-12">
             <div class="portfolio-details-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
                 {
@@ -140,7 +121,6 @@
                   }
                 }
               </script>
-    
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
                   <img src="assets/img/portfolio/app-1.jpg" alt="">
@@ -158,10 +138,34 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
-    
         </div>
-      </div>
     
+        <!-- Text Columns Section (At the Bottom) -->
+        <div class="row mt-4">
+          <!-- Left Column: Project Information -->
+          <div class="col-lg-6">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Tools</strong>: Web design</li>
+                <li><strong>Blog</strong>: <a href="#">Medium</a></li>
+                <li><strong>Source Code</strong>: <a href="#">Github</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Right Column: Project Description -->
+          <div class="col-lg-6">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Real-Time Sentiment Analysis on Twitter Data</h2>
+              <p>
+                Developed a real-time sentiment analysis application that processes Twitter data using machine learning models like Logistic Regression, XGBoost, and neural networks. Cleaned and transformed 1.6 million tweets with regex and NLTK to improve model accuracy, leveraging scikit-learn and Keras for text classification.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
     </section>
 <!-- end of porfolio section     -->
   </main>

@@ -1486,22 +1486,28 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.portfolio .row {
-  display: flex;
-  flex-wrap: wrap; /* Ensures items stack on smaller screens */
-  align-items: center; /* Align items vertically in the center */
+/* Ensure spacing around the image */
+.portfolio .portfolio-details-slider {
+  margin-bottom: 30px; /* Add spacing below the image section */
+  text-align: center; /* Center the image/slider */
 }
 
-.portfolio .portfolio-info,
-.portfolio .portfolio-description {
-  margin-bottom: 20px;
+/* Ensure text columns are properly aligned */
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio .col-lg-6 {
-  flex: 0 0 50%; /* Ensures each column takes 50% of the row's width */
-  max-width: 50%;
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+.portfolio .mt-4 {
+  margin-top: 40px; /* Additional spacing between sections */
+}
+
 
 .portfolio .portfolio-details-slider img {
   width: 100%; /* Ensures the images fit their container */

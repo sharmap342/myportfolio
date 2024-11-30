@@ -1608,7 +1608,7 @@ section,
 /* Close Button Customization */
 .modal .btn-close {
   background-color: transparent; /* Transparent background */
-  color: #fff; /* White close button icon */
+  color: #fff !important; /* White close button icon */
   border: none; /* Remove default border */
   font-size: 1.2rem; /* Slightly larger icon */
   opacity: 1;

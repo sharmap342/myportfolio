@@ -1567,6 +1567,7 @@ section,
 
 /* Close Button Customization */
 #projectModal .btn-close {
+  appearance: none;
   background-color: transparent; /* Transparent background */
   color: #fff; /* White close button icon */
   border: none; /* Remove default border */

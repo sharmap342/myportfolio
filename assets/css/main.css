@@ -1565,6 +1565,87 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Modal Section
+--------------------------------------------------------------*/
+
+/* General Modal Customization */
+.modal.fade #projectModal {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background for the modal overlay */
+}
+
+/* Modal Dialog Customization */
+.modal-dialog.modal-lg {
+  max-width: 90%; /* Increase modal width to 90% of the viewport */
+  max-height: 85%; /* Increase modal height to 85% of the viewport */
+  margin: auto; /* Center the modal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content Customization */
+.modal-content {
+  border: 2px solid #000; /* Dark border */
+  background-color: #000; /* Dark background */
+  color: #fff; /* White text for contrast */
+  border-radius: 10px; /* Optional: Rounded corners */
+  overflow: hidden; /* Ensure content stays within bounds */
+}
+
+/* Modal Header Customization */
+.modal-header {
+  background-color: #111; /* Slightly lighter shade for the header */
+  color: #fff; /* White header text */
+  border-bottom: 1px solid #333; /* Subtle border */
+}
+
+/* Modal Title Customization */
+.modal-title {
+  font-size: 1.5rem; /* Adjust title size */
+  font-weight: bold; /* Make the title stand out */
+}
+
+/* Close Button Customization */
+.btn-close {
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* White close button icon */
+  border: none; /* Remove default border */
+  font-size: 1.2rem; /* Slightly larger icon */
+}
+
+.btn-close:hover {
+  color: #ff4d4d; /* Red color on hover */
+  opacity: 0.8; /* Slight transparency for hover effect */
+}
+
+/* Modal Body Customization */
+.modal-body {
+  padding: 1.5rem; /* Adjust padding for better spacing */
+  overflow-y: auto; /* Add scroll for content overflow */
+}
+
+/* iFrame Customization */
+#projectIframe {
+  width: 100%;
+  height: 500px; /* Default height for content */
+  border: none; /* Remove border */
+  background-color: #222; /* Dark background for iframe */
+}
+
+/* Add Responsiveness */
+@media (max-width: 768px) {
+  .modal-dialog.modal-lg {
+    max-width: 95%; /* Adjust for smaller screens */
+    max-height: 90%;
+  }
+
+  #projectIframe {
+    height: 300px; /* Reduce iframe height for smaller screens */
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {

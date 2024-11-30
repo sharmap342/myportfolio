@@ -1566,7 +1566,7 @@ section,
 }
 
 /* Close Button Customization */
-.modal .close {
+.modal .btn-close {
   background-color: transparent; /* Transparent background */
   color: #fff !important; /* White close button icon */
   border: none; /* Remove default border */
@@ -1574,7 +1574,7 @@ section,
   opacity: 1;
 }
 
-.modal .close:hover {
+.modal .btn-close:hover {
   color: #ff4d4d; /* Red color on hover */
   opacity: 0.8; /* Slight transparency for hover effect */
 }

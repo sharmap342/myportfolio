@@ -1567,11 +1567,11 @@ section,
 
 /* Close Button Customization */
 #projectModal .btn-close {
-  background-color: transparent !important; /* Transparent background */
+  background-color: transparent; /* Transparent background */
   color: #fff !important; /* White close button icon */
-  border: none !important; /* Remove default border */
-  font-size: 1.2rem !important; /* Slightly larger icon */
-  opacity: 1 !important;
+  border: none; /* Remove default border */
+  font-size: 1.2rem; /* Slightly larger icon */
+  opacity: 1;
 }
 
 #projectModal .btn-close:hover {

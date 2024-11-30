@@ -1535,8 +1535,8 @@ section,
 
 /* Modal Dialog Customization */
 .modal .modal-dialog.modal-lg {
-  max-width: 90%; /* Increase modal width to 90% of the viewport */
-  max-height: 85%; /* Increase modal height to 85% of the viewport */
+  max-width: 80%; /* Increase modal width to 90% of the viewport */
+  max-height: 95%; /* Increase modal height to 85% of the viewport */
   margin: auto; /* Center the modal */
   display: flex;
   align-items: center;

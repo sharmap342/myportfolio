@@ -1566,15 +1566,15 @@ section,
 }
 
 /* Close Button Customization */
-.modal .close {
-  background-color: transparent; /* Transparent background */
+.modal .btn-close {
+  background-color: transparent !important; /* Transparent background */
   color: #fff !important; /* White close button icon */
-  border: none; /* Remove default border */
-  font-size: 1.2rem; /* Slightly larger icon */
-  opacity: 1;
+  border: none !important; /* Remove default border */
+  font-size: 1.2rem !important; /* Slightly larger icon */
+  opacity: 1 !important;
 }
 
-.modal .close:hover {
+.modal .btn-close:hover {
   color: #ff4d4d; /* Red color on hover */
   opacity: 0.8; /* Slight transparency for hover effect */
 }

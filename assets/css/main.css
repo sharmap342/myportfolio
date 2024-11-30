@@ -1611,6 +1611,7 @@ section,
   color: #fff; /* White close button icon */
   border: none; /* Remove default border */
   font-size: 1.2rem; /* Slightly larger icon */
+  opacity: 1;
 }
 
 .btn-close:hover {

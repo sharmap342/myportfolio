@@ -1424,6 +1424,24 @@ section,
   transform: scale(1.1);
 }
 
+.portfolio .portfolio-content a img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio .portfolio-content a:hover img {
+  transform: scale(1.05); /* Slight zoom effect */
+  opacity: 0.9; /* Dim the image slightly on hover */
+}
+
+.portfolio .portfolio-content .portfolio-info {
+  text-align: center; /* Optional: center-align the text */
+}
+
+.portfolio .portfolio-content a {
+  display: inline-block; /* Ensure the link behaves properly */
+}
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -1535,8 +1553,8 @@ section,
 
 /* Modal Dialog Customization */
 .modal .modal-dialog.modal-lg {
-  max-width: 80%; /* Increase modal width to 90% of the viewport */
-  max-height: 95%; /* Increase modal height to 85% of the viewport */
+  max-width: 80%; /* Increase modal width to 80% of the viewport */
+  max-height: 95%; /* Increase modal height to 95% of the viewport */
   margin: auto; /* Center the modal */
   display: flex;
   align-items: center;

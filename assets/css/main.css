@@ -1535,7 +1535,7 @@ section,
 
 /* Add margin to prevent text from overlapping with header */
 #portfolio-details {
-  margin-top: 100px; /* Adjust the value to match your header height */
+  margin-top: 0px; /* Adjust the value to match your header height */
 }
 
 .portfolio-details .row {

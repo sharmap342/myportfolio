@@ -1394,11 +1394,11 @@ section,
   color: rgba(255, 255, 255, 0.8);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
-  font-size: 26px;
-  color: #fff;
-  transition: 0.3s;
-  line-height: 1.2;
+.portfolio .portfolio-content .details-link {
+  position: absolute; /* Position the link to cover the entire section */
+  inset: 0; /* Expand link to fill the parent container */
+  z-index: 10; /* Ensure the link stays on top of other elements */
+  text-indent: -9999px; /* Visually hide the link's text (if any) */
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link:hover {

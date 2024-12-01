@@ -1349,55 +1349,38 @@ section,
   }
 }
 
-/* Main Portfolio Content */
 .portfolio .portfolio-content {
-  position: relative; /* Required for absolute positioning */
-  overflow: hidden; /* Prevents content overflow */
+  position: relative;
+  overflow: hidden;
 }
 
-/* Image Styles */
+
 .portfolio .portfolio-content img {
-  transition: 0.3s; /* Smooth transition for hover effects */
-  width: 100%; /* Responsive width */
-  height: 250px; /* Fixed height for consistency */
-  object-fit: cover; /* Avoid distortion */
-  border-radius: 5px; /* Optional rounded corners */
+  transition: 0.3s;
+  width: 100%; /* Makes the image responsive */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image scales without distortion */
+  border-radius: 5px; /* Optional: For rounded corners */
 }
 
-/* Hover Effects for Images */
-.portfolio .portfolio-content:hover img {
-  transform: scale(1.1); /* Zoom-in effect */
-}
-
-.portfolio .portfolio-content a img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.portfolio .portfolio-content a:hover img {
-  transform: scale(1.05); /* Slight zoom effect */
-  opacity: 0.9; /* Dim the image slightly on hover */
-}
-
-/* Portfolio Info Section */
 .portfolio .portfolio-content .portfolio-info {
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
   position: absolute;
-  inset: 0; /* Full coverage */
-  z-index: 3; /* Ensure it's above the image */
-  transition: all ease-in-out 0.3s; /* Smooth hover transition */
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  inset: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
   padding: 15px;
-  text-align: center; /* Center align text */
+  text-align: center;
 }
 
-/* Portfolio Info - Text and Heading */
 .portfolio .portfolio-content .portfolio-info h4 {
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
-  color: #ffffff; /* White text */
+  color: #ffffff;
   display: inline-block;
-  background-color: var(--accent-color); /* Accent color background */
+  background-color: var(--accent-color);
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -1409,29 +1392,33 @@ section,
   right: 0;
   font-size: 16px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+  color: rgba(255, 255, 255, 0.8);
 }
 
-/* Hover Effect to Show Portfolio Info */
+
 .portfolio .portfolio-content:hover .portfolio-info {
-  opacity: 1; /* Make text visible */
+  opacity: 1;
 }
 
-/* Stretched-Link for Entire Area Clickable */
-.portfolio .portfolio-content a.stretched-link {
-  position: absolute; /* Cover entire area */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2; /* Above the image, below the text */
-  display: block; /* Ensures it covers full space */
-  cursor: pointer; /* Hand icon on hover */
+.portfolio .portfolio-content:hover img {
+  transform: scale(1.1);
 }
 
-/* Debugging Overlay (Optional) */
-.portfolio .portfolio-content a.stretched-link.debug {
-  background: rgba(255, 0, 0, 0.2); /* Light red overlay for testing */
+.portfolio .portfolio-content a img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio .portfolio-content a:hover img {
+  transform: scale(1.05); /* Slight zoom effect */
+  opacity: 0.9; /* Dim the image slightly on hover */
+}
+
+.portfolio .portfolio-content a {
+  display: inline-block; /* Ensure the link behaves properly */
+}
+
+.portfolio-content a.stretched-link {
+  z-index: 2; /* Ensure it's above other elements */
 }
 
 

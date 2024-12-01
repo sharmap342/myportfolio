@@ -1417,6 +1417,9 @@ section,
   display: inline-block; /* Ensure the link behaves properly */
 }
 
+.portfolio-content a.stretched-link {
+  z-index: 2; /* Ensure it's above other elements */
+}
 
 
 /*--------------------------------------------------------------

@@ -1438,6 +1438,105 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Portfolio Details Section
+--------------------------------------------------------------*/
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.portfolio-details .portfolio-info {
+  background-color: var(--surface-color);
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* Ensure spacing around the image */
+.portfolio-details .portfolio-details-slider {
+  margin-bottom: 30px; /* Add spacing below the image section */
+  text-align: center; /* Center the image/slider */
+}
+
+/* Add margin to prevent text from overlapping with header */
+#portfolio-details {
+  margin-top: 0px; /* Adjust the value to match your header height */
+}
+
+.portfolio-details .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-details .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Center the image at the bottom */
+.portfolio-details .portfolio-details-image {
+  margin-top: 30px; /* Add spacing above the image section */
+  text-align: center; /* Center align the image container */
+}
+
+.portfolio-details .portfolio-details-image img {
+  width: 100%; /* Make the image take the full horizontal space */
+  max-width: 100%; /* Ensure no image overflow */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent inline margin issues */
+  border-radius: 0; /* Optional: Remove rounded corners if applied */
+  object-fit: cover; /* Ensure the image scales to fit without distortion */
+}
+
+/*--------------------------------------------------------------
 # Modal Section
 --------------------------------------------------------------*/
 

@@ -1373,19 +1373,14 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
-  font-weight: 400;
+.portfolio .portfolio-content h4 {
+  font-size: 16px;
+  font-weight: 600;
   color: #ffffff;
-  display: inline-block;
   background-color: var(--accent-color);
-
-  position: absolute; /* Position the h4 element */
-  top: 10px; /* Position it at the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  z-index: 4; /* Ensure it's above the image */
-  padding: 5px 10px; /* Padding for the background */
+  text-align: center;
+  padding: 10px 15px;
+  margin: 0 0 10px 0; /* Add spacing below the heading */
   border-radius: 5px; /* Optional: For rounded corners */
 }
 

@@ -1395,12 +1395,10 @@ section,
 }
 
 .portfolio .portfolio-content .details-link {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: calc(100% - 20px); /* Adjust the clickable area */
-  height: calc(100% - 20px); /* Adjust the clickable area */
-  z-index: 10;
+  position: absolute; /* Position the link to cover the entire section */
+  inset: 0; /* Expand link to fill the parent container */
+  z-index: 1; /* Ensure the link stays on top of other elements */
+  text-indent: -9999px; /* Visually hide the link's text (if any) */
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link:hover {

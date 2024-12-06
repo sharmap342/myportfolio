@@ -1524,8 +1524,8 @@ section,
 /* General Modal Customization */
 
 .modal .modal-dialog {
-  max-height: 80vh; /* 75% of the viewport height */
-  height: 80vh; /* Ensures it is always 75% */
+  max-height: 100vh; /* 75% of the viewport height */
+  height: 100vh; /* Ensures it is always 75% */
 }
 
 .modal.fade #projectModal {

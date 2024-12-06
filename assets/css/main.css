@@ -1525,7 +1525,7 @@ section,
 /* Modal Dialog Customization */
 .modal .modal-dialog {
   max-width: 80%; /* Width is 80% of the viewport */
-  max-height: 75vh; /* Height is limited to 75% of the viewport */
+  max-height: 100vh; /* Height is limited to 75% of the viewport */
   margin: auto; /* Center the modal */
   display: flex;
   align-items: center;
@@ -1556,10 +1556,11 @@ section,
 
 /* Close Button Customization */
 #projectModal .btn-close {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  font-size: 1.2rem;
+  appearance: none;
+  background-color: #fff; /* Transparent background */
+  color: #fff; /* White close button icon */
+  border: none; /* Remove default border */
+  font-size: 1.2rem; /* Slightly larger icon */
   opacity: 1;
 }
 
@@ -1572,7 +1573,7 @@ section,
 .modal .modal-body {
   padding: 1.5rem; /* Consistent padding */
   overflow-y: auto; /* Scroll only for inner content */
-  max-height: calc(75vh - 56px); /* Adjust for header height */
+  max-height: calc(100vh - 56px); /* Adjust for header height */
 }
 
 /* iFrame Customization */

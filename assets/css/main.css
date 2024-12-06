@@ -1549,6 +1549,7 @@ section,
   color: #fff; /* White text for contrast */
   border-radius: 10px; /* Optional: Rounded corners */
   overflow: hidden; /* Ensure content stays within bounds */
+  height: 100%;
 }
 
 /* Modal Header Customization */

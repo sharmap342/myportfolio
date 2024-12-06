@@ -1583,7 +1583,8 @@ section,
 /* Modal Body Customization */
 .modal .modal-body {
   padding: 1.5rem; /* Adjust padding for better spacing */
-  overflow-y: auto; /* Add scroll for content overflow */
+  overflow-y: hidden; /* Add scroll for content overflow */
+  height: calc(100% - 56px - 56px);
 }
 
 /* iFrame Customization */

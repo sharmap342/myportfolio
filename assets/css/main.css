@@ -1523,7 +1523,7 @@ section,
 
 /* General Modal Customization */
 
-.modal .modal-dialog {
+.modal-dialog {
   max-height: 100vh; /* 75% of the viewport height */
   height: 100vh; /* Ensures it is always 75% */
 }
@@ -1549,7 +1549,6 @@ section,
   color: #fff; /* White text for contrast */
   border-radius: 10px; /* Optional: Rounded corners */
   overflow: hidden; /* Ensure content stays within bounds */
-  height: 100%;
 }
 
 /* Modal Header Customization */
@@ -1584,8 +1583,6 @@ section,
 .modal .modal-body {
   padding: 1.5rem; /* Adjust padding for better spacing */
   overflow-y: auto; /* Add scroll for content overflow */
-  height: calc(100% - 56px - 56px); /* Subtract height of header and footer (if present) */
-  overflow-y: auto; /* Enables scrolling if content overflows */
 }
 
 /* iFrame Customization */

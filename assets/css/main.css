@@ -1523,7 +1523,10 @@ section,
 
 /* General Modal Customization */
 
-
+.modal-dialog {
+  max-height: 100vh; /* 75% of the viewport height */
+  
+}
 
 .modal.fade #projectModal {
   background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background for the modal overlay */

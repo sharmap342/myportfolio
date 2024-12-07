@@ -1238,9 +1238,13 @@ section,
   background: color-mix(in srgb, var(--background-color), transparent 70%);
 }
 
-.services .service-item:hover h3,
+
 .services .service-item:hover p {
   color: var(--contrast-color);
+}
+
+.services .service-item:hover h3 {
+  color: blue;
 }
 
 /*--------------------------------------------------------------

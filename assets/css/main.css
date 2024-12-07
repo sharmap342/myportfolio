@@ -1351,7 +1351,7 @@ section,
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  background-color: #00394d;
+  background-color: var(--surface-color);
   text-align: center;
   padding: 10px 15px;
   margin: 0 0 10px 0; /* Add spacing below the heading */

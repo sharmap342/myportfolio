@@ -1494,12 +1494,6 @@ section,
 --------------------------------------------------------------*/
 
 /* General Modal Customization */
-.modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Ensure modal fills the screen vertically */
-}
 
 .modal-dialog {
   

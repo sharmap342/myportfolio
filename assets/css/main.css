@@ -1495,20 +1495,12 @@ section,
 
 /* General Modal Customization */
 
-.modal-dialog {
-  
-  height: 100vh; /* Ensures it is always 75% */
-}
-
-.modal.fade #projectModal {
-  background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background for the modal overlay */
-}
-
 /* Modal Dialog Customization */
 .modal .modal-dialog.modal-lg {
   max-width: 80%; /* Increase modal width to 80% of the viewport */
-  max-height: 100%; /* Increase modal height to 95% of the viewport */
-  margin: auto; /* Center the modal */
+  width: 100%; /* Ensure full width within parent */
+  height: 100%; /* Occupy full height of the modal container */
+  margin: 0; /* Remove default margin */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1521,7 +1513,10 @@ section,
   color: #fff; /* White text for contrast */
   border-radius: 10px; /* Optional: Rounded corners */
   overflow: hidden; /* Ensure content stays within bounds */
-  height: 100%;
+  height: 100vh; /* Force content to occupy the entire viewport height */
+  max-height: 100vh; /* Prevent overflow beyond the viewport */
+  display: flex;
+  flex-direction: column; /* Ensures header, body are properly stacked */
 }
 
 /* Modal Header Customization */
@@ -1529,40 +1524,21 @@ section,
   background-color: #111; /* Slightly lighter shade for the header */
   color: #fff; /* White header text */
   border-bottom: 1px solid #333; /* Subtle border */
-}
-
-/* Modal Title Customization */
-.modal .modal-title {
-  font-size: 1.5rem; /* Adjust title size */
-  font-weight: bold; /* Make the title stand out */
-}
-
-/* Close Button Customization */
-#projectModal .btn-close {
-  appearance: none;
-  background-color: #fff; /* Transparent background */
-  color: #fff; /* White close button icon */
-  border: none; /* Remove default border */
-  font-size: 1.2rem; /* Slightly larger icon */
-  opacity: 1;
-}
-
-#projectModal .btn-close:hover {
-  color: #ff4d4d; /* Red color on hover */
-  opacity: 0.8; /* Slight transparency for hover effect */
+  flex-shrink: 0; /* Prevent header from shrinking */
 }
 
 /* Modal Body Customization */
 .modal .modal-body {
   padding: 1.5rem; /* Adjust padding for better spacing */
-  overflow-y: hidden; /* Add scroll for content overflow */
-  height: calc(100% - 56px - 56px);
+  overflow-y: auto; /* Add scroll for content overflow */
+  flex-grow: 1; /* Allow body to take up remaining space */
+  height: auto; /* Ensure proper adjustment */
 }
 
 /* iFrame Customization */
 .modal #projectIframe {
   width: 100%;
-  height: 500px; /* Default height for content */
+  height: 100%; /* Make iframe fill the modal body */
   border: none; /* Remove border */
   background-color: #222; /* Dark background for iframe */
 }
@@ -1571,13 +1547,14 @@ section,
 @media (max-width: 768px) {
   .modal .modal-dialog.modal-lg {
     max-width: 95%; /* Adjust for smaller screens */
-    max-height: 90%;
+    width: 100%; /* Ensure width fits smaller screens */
   }
 
-  #projectIframe {
-    height: 300px; /* Reduce iframe height for smaller screens */
+  .modal .modal-content {
+    height: 100vh; /* Reapply full height for smaller screens */
   }
 }
+
 
 
 /*--------------------------------------------------------------

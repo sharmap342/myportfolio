@@ -1586,10 +1586,49 @@ section,
 
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# More Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.education-container {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.education-container p {
+  color: #d9f0ff; /* Light blue text color */
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.education-container p i {
+  margin-right: 5px;
+  color: var(--accent-color);
+}
+
+.education-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.education-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #00ff00;
+  position: relative;
+  margin-top: 10px;
 }
 
 /*--------------------------------------------------------------

@@ -1332,7 +1332,7 @@ section,
 .portfolio .portfolio-content img {
   transition: 0.3s;
   width: 100%; /* Makes the image responsive */
-  height: auto; /* Set a fixed height */
+  height: 100%; /* Set a fixed height */
   object-fit: cover; /* Ensures the image scales without distortion */
   border-radius: 5px; /* Optional: For rounded corners */
 }

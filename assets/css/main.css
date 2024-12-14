@@ -1727,7 +1727,7 @@ section,
 --------------------------------------------------------------*/
 
 /* Publications Section Styling */
-.publication-title {
+#publications .publication-title {
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;

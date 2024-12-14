@@ -1736,7 +1736,7 @@ section,
   position: relative;
 }
 
-.publication-section-title::after {
+#publications .publication-section-title::after {
   content: "";
   display: block;
   width: 100%;
@@ -1745,7 +1745,7 @@ section,
   margin-top: 10px;
 }
 
-.publications-container {
+#publications .publications-container {
   background-color: var(--surface-color); /* Same background as Education/Experience */
   padding: 30px;
   border-radius: 10px;
@@ -1753,45 +1753,45 @@ section,
 }
 
 /* Chart Container */
-.chart-container {
+#publications .chart-container {
   margin: 0 auto 30px auto; /* Center the chart and add space below */
   text-align: center;
 }
 
 /* Titles for "Cited By" and "Year" */
-.publication-titles {
+#publications .publication-titles {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   font-size: 1rem;
   color: #ffffff;
   margin-bottom: 15px;
-  border-bottom: 1px solid #00ff00; /* Green underline for headers */
+  border-bottom: 1px solid #737573; /* Green underline for headers */
   padding-bottom: 8px;
 }
 
-.publication-titles .title-header {
+#publications .publication-titles .title-header {
   flex: 3;
 }
 
-.publication-titles .cited-header {
+#publications .publication-titles .cited-header {
   flex: 1;
   text-align: center;
 }
 
-.publication-titles .year-header {
+#publications .publication-titles .year-header {
   flex: 1;
   text-align: right;
 }
 
 /* Publications List */
-.publications-list ul {
+#publications .publications-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.publications-list li {
+#publications .publications-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1800,22 +1800,22 @@ section,
 }
 
 /* Title of Publication */
-.publication-title {
+#publications .publication-title {
   flex: 3;
 }
 
-.publication-title a {
-  color: #00ff00; /* Green for links */
+#publications .publication-title a {
+  color: #d9f0ff; /* Green for links */
   font-weight: 600;
   text-decoration: none;
 }
 
-.publication-title a:hover {
+#publications .publication-title a:hover {
   text-decoration: underline;
 }
 
 /* Cited By Number */
-.cited-number {
+#publications .cited-number {
   flex: 1;
   text-align: center;
   color: #ffffff;
@@ -1823,7 +1823,7 @@ section,
 }
 
 /* Year */
-.year-number {
+#publications .year-number {
   flex: 1;
   text-align: right;
   color: #ffffff;

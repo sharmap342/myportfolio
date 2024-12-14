@@ -1645,6 +1645,72 @@ section,
   margin: 0;
 }
 
+/*--------------------------------------------------------------
+# Experience Section
+--------------------------------------------------------------*/
+/* Section Title */
+.experience-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.experience-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #00ff00;
+  margin-top: 10px;
+}
+
+/* Experience Container */
+.experience-container {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444444; /* Subtle line between items */
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.experience-date {
+  font-size: 1rem;
+  color: #aaaaaa; /* Light gray for date */
+  font-weight: normal;
+}
+
+.experience-item ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.experience-item li {
+  font-size: 1rem;
+  color: #d9f0ff;
+  margin-bottom: 5px;
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section

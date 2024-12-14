@@ -1795,7 +1795,7 @@ section,
 .publications-list li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   margin-bottom: 10px;
   color: #d9f0ff; /* Light blue text color */
 }
@@ -1818,8 +1818,8 @@ section,
 /* Cited By Number */
 .cited-number {
   flex: 1;
-  text-align: center;
-  color: #ffffff;
+  text-align: left;
+  color: #d9f0ff;
   font-size: 0.95rem;
 }
 
@@ -1827,7 +1827,7 @@ section,
 .year-number {
   flex: 1;
   text-align: right;
-  color: #ffffff;
+  color: #d9f0ff;
   font-size: 0.95rem;
 }
 

@@ -1758,6 +1758,12 @@ section,
   text-align: center;
 }
 
+.publication-item {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: space-between;
+}
+
 /* Titles for "Cited By" and "Year" */
 #publications .publication-titles {
   display: flex;

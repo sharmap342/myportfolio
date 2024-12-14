@@ -1758,11 +1758,6 @@ section,
   text-align: center;
 }
 
-.publication-item {
-  display: flex;
-  align-items: center; /* Ensures vertical alignment */
-  justify-content: space-between;
-}
 
 /* Titles for "Cited By" and "Year" */
 #publications .publication-titles {
@@ -1791,6 +1786,13 @@ section,
 }
 
 /* Publications List */
+
+#publications .publication-item {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: space-between;
+}
+
 #publications .publications-list ul {
   list-style: none;
   padding: 0;

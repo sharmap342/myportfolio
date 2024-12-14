@@ -1722,6 +1722,97 @@ section,
   margin-bottom: 5px;
 }
 
+/*--------------------------------------------------------------
+# Publication Section
+--------------------------------------------------------------*/
+
+/* Publications Section Styling */
+.publications-container {
+  background-color: var(--surface-color); /* Same background as Education/Experience */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Container */
+.chart-container {
+  margin: 0 auto 30px auto; /* Center the chart and add space below */
+  text-align: center;
+}
+
+/* Titles for "Cited By" and "Year" */
+.publication-titles {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #00ff00; /* Green underline for headers */
+  padding-bottom: 8px;
+}
+
+.publication-titles .title-header {
+  flex: 3;
+}
+
+.publication-titles .cited-header {
+  flex: 1;
+  text-align: center;
+}
+
+.publication-titles .year-header {
+  flex: 1;
+  text-align: right;
+}
+
+/* Publications List */
+.publications-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publications-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #d9f0ff; /* Light blue text color */
+}
+
+/* Title of Publication */
+.publication-title {
+  flex: 3;
+}
+
+.publication-title a {
+  color: #00ff00; /* Green for links */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  text-decoration: underline;
+}
+
+/* Cited By Number */
+.cited-number {
+  flex: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+/* Year */
+.year-number {
+  flex: 1;
+  text-align: right;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+
 
 /*--------------------------------------------------------------
 # Contact Section

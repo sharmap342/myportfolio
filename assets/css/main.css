@@ -1745,7 +1745,8 @@ section,
   margin-top: 10px;
 }
 
-#publications .publications-container {
+/* Publications Section Styling */
+.publications-container {
   background-color: var(--surface-color); /* Same background as Education/Experience */
   padding: 30px;
   border-radius: 10px;
@@ -1753,47 +1754,45 @@ section,
 }
 
 /* Chart Container */
-#publications .chart-container {
+.chart-container {
   margin: 0 auto 30px auto; /* Center the chart and add space below */
   text-align: center;
 }
 
-
-
 /* Titles for "Cited By" and "Year" */
-#publications .publication-titles {
+.publication-titles {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   font-size: 1rem;
   color: #ffffff;
   margin-bottom: 15px;
-  border-bottom: 1px solid #737573; /* Green underline for headers */
+  border-bottom: 1px solid #7b7c7b; /* Green underline for headers */
   padding-bottom: 8px;
 }
 
-#publications .publication-titles .title-header {
+.publication-titles .title-header {
   flex: 3;
 }
 
-#publications .publication-titles .cited-header {
+.publication-titles .cited-header {
   flex: 1;
   text-align: center;
 }
 
-#publications .publication-titles .year-header {
+.publication-titles .year-header {
   flex: 1;
   text-align: right;
 }
 
 /* Publications List */
-#publications .publications-list ul {
+.publications-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#publications .publications-list li {
+.publications-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1802,22 +1801,22 @@ section,
 }
 
 /* Title of Publication */
-#publications .publication-title {
+.publication-title {
   flex: 3;
 }
 
-#publications .publication-title a {
-  color: #d9f0ff; /* Green for links */
+.publication-title a {
+  color: #00ff00; /* Green for links */
   font-weight: 600;
   text-decoration: none;
 }
 
-#publications .publication-title a:hover {
+.publication-title a:hover {
   text-decoration: underline;
 }
 
 /* Cited By Number */
-#publications .cited-number {
+.cited-number {
   flex: 1;
   text-align: center;
   color: #ffffff;
@@ -1825,7 +1824,7 @@ section,
 }
 
 /* Year */
-#publications .year-number {
+.year-number {
   flex: 1;
   text-align: right;
   color: #ffffff;

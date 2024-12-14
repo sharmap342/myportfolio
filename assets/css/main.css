@@ -1639,10 +1639,17 @@ section,
   font-weight: normal;
 }
 
-.education-item p {
+
+.education-item ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.education-item li {
   font-size: 1rem;
   color: #d9f0ff;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 /*--------------------------------------------------------------

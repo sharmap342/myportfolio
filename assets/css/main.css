@@ -1608,7 +1608,7 @@ section,
 /* Education Container */
 .education-container {
   background-color: var(--surface-color);
-  padding: 30px;
+  padding: 5px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -1668,7 +1668,7 @@ section,
 /* Experience Container */
 .experience-container {
   background-color: var(--surface-color);
-  padding: 30px;
+  padding: 5px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

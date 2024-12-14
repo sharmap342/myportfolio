@@ -1759,6 +1759,7 @@ section,
 }
 
 
+
 /* Titles for "Cited By" and "Year" */
 #publications .publication-titles {
   display: flex;
@@ -1786,13 +1787,6 @@ section,
 }
 
 /* Publications List */
-
-#publications .publication-item {
-  display: flex;
-  align-items: center; /* Ensures vertical alignment */
-  justify-content: space-between;
-}
-
 #publications .publications-list ul {
   list-style: none;
   padding: 0;
@@ -1800,8 +1794,11 @@ section,
 }
 
 #publications .publications-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
-  
+  color: #d9f0ff; /* Light blue text color */
 }
 
 /* Title of Publication */

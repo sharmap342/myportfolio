@@ -1588,32 +1588,7 @@ section,
 /*--------------------------------------------------------------
 # More Section
 --------------------------------------------------------------*/
-.education-container {
-  background-color: var(--surface-color);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.education-container h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.education-container p {
-  color: #d9f0ff; /* Light blue text color */
-  margin-bottom: 15px;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.education-container p i {
-  margin-right: 5px;
-  color: var(--accent-color);
-}
-
+/* Section Title */
 .education-title {
   font-weight: 700;
   font-size: 24px;
@@ -1627,9 +1602,49 @@ section,
   width: 80px;
   height: 2px;
   background-color: #00ff00;
-  position: relative;
   margin-top: 10px;
 }
+
+/* Education Container */
+.education-container {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444444; /* Adds a subtle line between items */
+}
+
+.education-item:last-child {
+  border-bottom: none;
+}
+
+.education-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.education-date {
+  font-size: 1rem;
+  color: #aaaaaa; /* Light gray for date */
+  font-weight: normal;
+}
+
+.education-item p {
+  font-size: 1rem;
+  color: #d9f0ff;
+  margin: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section

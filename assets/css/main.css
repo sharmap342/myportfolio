@@ -760,6 +760,12 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+#interests .section-title {
+  padding-left: 12px;
+  padding-top: 30px;
+  padding-bottom: 12px;
+}
+
 .about-title h2{
   font-weight: 700;
   font-size: 24px;

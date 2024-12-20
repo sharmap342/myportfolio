@@ -1839,6 +1839,33 @@ section,
 
 
 /*--------------------------------------------------------------
+# Publication Section
+--------------------------------------------------------------*/
+
+.activity-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px; /* Space below image */
+}
+
+.extracurricular-item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.activity-description p {
+  font-size: 1rem;
+  color: #d9f0ff;
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {

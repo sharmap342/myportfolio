@@ -1883,13 +1883,13 @@ section,
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .activity-image img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 15px; /* Adds spacing below the image */
 }
 
 .activity-description p {

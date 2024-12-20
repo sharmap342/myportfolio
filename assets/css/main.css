@@ -1842,11 +1842,40 @@ section,
 # Publication Section
 --------------------------------------------------------------*/
 
-.activity-image img {
+.extracurricular-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.extracurricular-title::after {
+  content: "";
+  display: block;
   width: 100%;
-  height: auto;
+  height: 2px;
+  background-color: #00ff00;
+  margin-top: 10px;
+}
+
+/* Extracurricular Container */
+.extracurricular-container {
+  background-color: var(--surface-color);
+  padding: 20px;
   border-radius: 10px;
-  margin-bottom: 15px; /* Space below image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.extracurricular-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444444;
+}
+
+.extracurricular-item:last-child {
+  border-bottom: none;
 }
 
 .extracurricular-item h3 {
@@ -1854,7 +1883,13 @@ section,
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 10px;
-  text-align: left;
+}
+
+.activity-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px; /* Adds spacing below the image */
 }
 
 .activity-description p {
